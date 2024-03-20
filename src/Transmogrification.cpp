@@ -163,7 +163,7 @@ const char* Transmogrification::GetSlotName(uint8 slot, WorldSession* session) c
             { LOCALE_koKR, "셔츠" },
             { LOCALE_frFR, "Chemise" },
             { LOCALE_deDE, "Hemd" },
-            { LOCALE_zhCN, "衬衫" },
+            { LOCALE_zhCN, "衬衣" },
             { LOCALE_zhTW, "襯衫" },
             { LOCALE_esES, "Camisa" },
             { LOCALE_esMX, "Camisa" },

@@ -33,7 +33,7 @@ const std::unordered_map<LocaleConstant, std::string> TRANSMOG_TEXT_HOWWORKS = {
     {LOCALE_koKR, "형상변환은 어떻게 작동합니까?"},
     {LOCALE_frFR, "Comment fonctionne la transmogrification ?"},
     {LOCALE_deDE, "Wie funktioniert Transmogrifizierung?"},
-    {LOCALE_zhCN, "变形术是如何运作的？"},
+    {LOCALE_zhCN, "如何使用幻化？"},
     {LOCALE_zhTW, "幻化是如何運作的？"},
     {LOCALE_esES, "¿Cómo funciona la transfiguración?"},
     {LOCALE_esMX, "¿Cómo funciona la transfiguración?"},
@@ -93,7 +93,7 @@ const std::unordered_map<LocaleConstant, std::string> TRANSMOG_TEXT_HOWSETSWORK 
     {LOCALE_koKR, "세트는 어떻게 작동합니까?"},
     {LOCALE_frFR, "Comment fonctionnent les ensembles ?"},
     {LOCALE_deDE, "Wie funktionieren Sets?"},
-    {LOCALE_zhCN, "套装是如何运作的？"},
+    {LOCALE_zhCN, "如何使用套装？"},
     {LOCALE_zhTW, "套裝如何運作？"},
     {LOCALE_esES, "¿Cómo funcionan los conjuntos?"},
     {LOCALE_esMX, "¿Cómo funcionan los conjuntos?"},
@@ -177,7 +177,7 @@ const std::unordered_map<LocaleConstant, std::string> TRANSMOG_TEXT_INSERTSETNAM
     {LOCALE_koKR, "세트 이름 입력"},
     {LOCALE_frFR, "Insérer le nom de l'ensemble"},
     {LOCALE_deDE, "Set-Namen einfügen"},
-    {LOCALE_zhCN, "插入套装名称"},
+    {LOCALE_zhCN, "输入套装名称"},
     {LOCALE_zhTW, "輸入套裝名稱"},
     {LOCALE_esES, "Insertar nombre del conjunto"},
     {LOCALE_esMX, "Insertar nombre del conjunto"},
@@ -225,8 +225,8 @@ const std::unordered_map<LocaleConstant, std::string> TRANSMOG_TEXT_CONFIRM_HIDE
     {LOCALE_koKR, "이 슬롯에 아이템을 감추고 있습니다.\n계속하시겠습니까?\n\n"},
     {LOCALE_frFR, "Vous masquez l'objet dans cet emplacement.\nVoulez-vous continuer ?\n\n"},
     {LOCALE_deDE, "Du versteckst das Item in diesem Slot.\nMöchtest du fortfahren?\n\n"},
-    {LOCALE_zhCN, "您正在隐藏此槽中的物品。\n您是否要继续？\n\n"},
-    {LOCALE_zhTW, "您正在隱藏此槽中的物品。\n您是否希望繼續？\n\n"},
+    {LOCALE_zhCN, "您正在隐藏此部位中的物品。\n您是否要继续？\n\n"},
+    {LOCALE_zhTW, "您正在隱藏此部位中的物品。\n您是否希望繼續？\n\n"},
     {LOCALE_esES, "Estás ocultando el objeto en esta ranura.\n¿Deseas continuar?\n\n"},
     {LOCALE_esMX, "Estás ocultando el objeto en esta ranura.\n¿Deseas continuar?\n\n"},
     {LOCALE_ruRU, "Вы скрываете предмет в этом слоте.\nЖелаете продолжить?\n\n"}
@@ -237,8 +237,8 @@ const std::unordered_map<LocaleConstant, std::string> TRANSMOG_TEXT_HIDESLOT = {
     {LOCALE_koKR, "슬롯 숨기기"},
     {LOCALE_frFR, "Cacher l'emplacement"},
     {LOCALE_deDE, "Slot verbergen"},
-    {LOCALE_zhCN, "隐藏槽位"},
-    {LOCALE_zhTW, "隱藏槽位"},
+    {LOCALE_zhCN, "隐藏部位"},
+    {LOCALE_zhTW, "隱藏部位"},
     {LOCALE_esES, "Ocultar ranura"},
     {LOCALE_esMX, "Ocultar ranura"},
     {LOCALE_ruRU, "Скрыть слот"}
@@ -249,8 +249,8 @@ const std::unordered_map<LocaleConstant, std::string> TRANSMOG_TEXT_REMOVETRANSM
     {LOCALE_koKR, "해당 슬롯의 형상변환을 제거합니까?"},
     {LOCALE_frFR, "Supprimer la transmogrification de l'emplacement ?"},
     {LOCALE_deDE, "Transmogrifikation aus dem Slot entfernen?"},
-    {LOCALE_zhCN, "是否要从该槽位中移除幻化？"},
-    {LOCALE_zhTW, "從該槽位移除幻化？"},
+    {LOCALE_zhCN, "是否移除该部位幻化？"},
+    {LOCALE_zhTW, "從該部位移除幻化？"},
     {LOCALE_esES, "¿Eliminar la transfiguración del espacio?"},
     {LOCALE_esMX, "¿Eliminar la transfiguración del espacio?"},
     {LOCALE_ruRU, "Удалить трансмогрификацию из ячейки?"}
@@ -261,7 +261,7 @@ const std::unordered_map<LocaleConstant, std::string> TRANSMOG_TEXT_CONFIRM_USEI
     {LOCALE_koKR, "이 아이템을 변형에 사용하면 계정에 제한되어 환불 및 거래가 불가능하게 됩니다.\n계속하시겠습니까?\n\n"},
     {LOCALE_frFR, "En utilisant cet objet pour la transmogrification, il sera lié à votre personnage et deviendra non remboursable et non échangeable.\nVoulez-vous continuer ?\n\n"},
     {LOCALE_deDE, "Wenn du diesen Gegenstand für die Transmogrifikation verwendest, wird er an dich gebunden und kann nicht erstattet oder gehandelt werden.\nMöchtest du fortfahren?\n\n"},
-    {LOCALE_zhCN, "将此物品用于幻化将使其与您绑定，并使其不可退还和不可交易。\n您是否要继续？\n\n"},
+    {LOCALE_zhCN, "此物品用于幻化后将使其与您绑定，并不可退还、交易。\n您是否要继续？\n\n"},
     {LOCALE_zhTW, "使用此物品進行幻化將使其與您綁定，並使其無法退款和無法交易。\n您是否希望繼續？\n\n"},
     {LOCALE_esES, "Usar este objeto para transfigurar lo vinculará a ti y lo volverá no reembolsable y no intercambiable.\n¿Deseas continuar?\n\n"},
     {LOCALE_esMX, "Usar este objeto para transfigurar lo vinculará a ti y lo volverá no reembolsable y no intercambiable.\n¿Deseas continuar?\n\n"},
@@ -297,7 +297,7 @@ const std::unordered_map<LocaleConstant, std::string> TRANSMOG_TEXT_ADDED_APPEAR
     {LOCALE_koKR, "이(가) 외형 컬렉션에 추가되었습니다."},
     {LOCALE_frFR, "a été ajouté(e) à votre collection d'apparences."},
     {LOCALE_deDE, "wurde deiner Transmog-Sammlung hinzugefügt."},
-    {LOCALE_zhCN, "已添加到外观收藏中。"},
+    {LOCALE_zhCN, "已加入了你的外观收藏。"},
     {LOCALE_zhTW, "已加入您的外觀收藏。"},
     {LOCALE_esES, "se ha añadido a tu colección de apariencias."},
     {LOCALE_esMX, "se ha agregado a tu colección de apariencias."},
@@ -796,7 +796,7 @@ public:
                 }
                 else if (!lastPage)
                 {
-                    AddGossipItemFor(player, GOSSIP_ICON_CHAT, "Next Page", EQUIPMENT_SLOT_END + 11, slot);
+                    AddGossipItemFor(player, GOSSIP_ICON_CHAT, GetLocaleText(locale, "next_page"), EQUIPMENT_SLOT_END + 11, slot);
                 }
 
                 AddGossipItemFor(player, GOSSIP_ICON_MONEY_BAG, "|TInterface/ICONS/INV_Enchant_Disenchant:30:30:-18:0|t" + GetLocaleText(locale, "remove_transmog"), EQUIPMENT_SLOT_END + 3, slot, GetLocaleText(locale, "remove_transmog_slot"), 0, false);
