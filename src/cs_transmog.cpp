@@ -157,13 +157,13 @@ public:
             // Notify target of new item in appearance collection
             if (target && !(target->GetPlayerSetting("mod-transmog", SETTING_HIDE_TRANSMOG).value) && !sTransmogrification->CanNeverTransmog(itemTemplate))
             {
-                ChatHandler(target->GetSession()).PSendSysMessage(R"(|c%s|Hitem:%u:0:0:0:0:0:0:0:0|h[%s]|h|r ÒÑ¼ÓÈëÁËÄãµÄÍâ¹ÛÊÕ²Ø¡£)", itemQuality.c_str(), itemId, itemName.c_str());
+                ChatHandler(target->GetSession()).PSendSysMessage(R"(|c%s|Hitem:%u:0:0:0:0:0:0:0:0|h[%s]|h|r å·²åŠ å…¥äº†ä½ çš„å¤–è§‚æ”¶è—ã€‚)", itemQuality.c_str(), itemId, itemName.c_str());
             }
 
             // Feedback of successful command execution to GM
             if (isNotConsole && target != handler->GetPlayer())
             {
-                handler->PSendSysMessage(R"(|c%s|Hitem:%u:0:0:0:0:0:0:0:0|h[%s]|h|r ÒÑ¼ÓÈëµ½Íæ¼Ò %s µÄÍâ¹ÛÊÕ²Ø¡£)", itemQuality.c_str(), itemId, itemName.c_str(), nameLink);
+                handler->PSendSysMessage(R"(|c%s|Hitem:%u:0:0:0:0:0:0:0:0|h[%s]|h|r å·²åŠ å…¥åˆ°ç©å®¶ %s çš„å¤–è§‚æ”¶è—ã€‚)", itemQuality.c_str(), itemId, itemName.c_str(), nameLink);
             }
 
             CharacterDatabase.Execute("INSERT INTO custom_unlocked_appearances (account_id, item_template_id) VALUES ({}, {})", accountId, itemId);
@@ -173,7 +173,7 @@ public:
             // Feedback of failed command execution to GM
             if (isNotConsole)
             {
-                handler->PSendSysMessage(R"(Íæ¼Ò %s Íâ¹ÛÊÕ²ØÖĞÒÑÓĞ |c%s|Hitem:%u:0:0:0:0:0:0:0:0|h[%s]|h|r¡£)", nameLink, itemQuality.c_str(), itemId, itemName.c_str());
+                handler->PSendSysMessage(R"(ç©å®¶ %s å¤–è§‚æ”¶è—ä¸­å·²æœ‰ |c%s|Hitem:%u:0:0:0:0:0:0:0:0|h[%s]|h|rã€‚)", nameLink, itemQuality.c_str(), itemId, itemName.c_str());
                 handler->SetSentErrorMessage(true);
             }
         }
@@ -272,7 +272,7 @@ public:
             // Failed command execution
             if (!added)
             {
-                handler->PSendSysMessage("Íæ¼Ò %s Íâ¹ÛÊÕ²ØÌ××°ÖĞÒÑÓĞ |cffffffff|Hitemset:%d|h[%s %s]|h|r¡£", nameLink, uint32(itemSetId), setName.c_str(), localeNames[locale]);
+                handler->PSendSysMessage("ç©å®¶ %s å¤–è§‚æ”¶è—å¥—è£…ä¸­å·²æœ‰ |cffffffff|Hitemset:%d|h[%s %s]|h|rã€‚", nameLink, uint32(itemSetId), setName.c_str(), localeNames[locale]);
                 handler->SetSentErrorMessage(true);
                 return true;
             }
@@ -280,14 +280,14 @@ public:
             // Successful command execution
             if (target != handler->GetPlayer())
             {
-                handler->PSendSysMessage("Ì××° |cffffffff|Hitemset:%d|h[%s %s]|h|r ÒÑ¼ÓÈëÁËÍæ¼Ò %s µÄÍâ¹ÛÊÕ²Ø¡£ ", uint32(itemSetId), setName.c_str(), localeNames[locale], nameLink);
+                handler->PSendSysMessage("å¥—è£… |cffffffff|Hitemset:%d|h[%s %s]|h|r å·²åŠ å…¥äº†ç©å®¶ %s çš„å¤–è§‚æ”¶è—ã€‚ ", uint32(itemSetId), setName.c_str(), localeNames[locale], nameLink);
             }
         }
 
         // Notify target of new item in appearance collection
         if (target && !(target->GetPlayerSetting("mod-transmog", SETTING_HIDE_TRANSMOG).value))
         {
-            ChatHandler(target->GetSession()).PSendSysMessage("Ì××° |cffffffff|Hitemset:%d|h[%s %s]|h|r ÒÑ¼ÓÈëÁËÄãµÄÍâ¹ÛÊÕ²Ø¡£", uint32(itemSetId), setName.c_str(), localeNames[locale]);
+            ChatHandler(target->GetSession()).PSendSysMessage("å¥—è£… |cffffffff|Hitemset:%d|h[%s %s]|h|r å·²åŠ å…¥äº†ä½ çš„å¤–è§‚æ”¶è—ã€‚", uint32(itemSetId), setName.c_str(), localeNames[locale]);
         }
 
         return true;
@@ -297,7 +297,7 @@ public:
     {
         if (!sTransmogrification->IsPortableNPCEnabled)
         {
-            handler->GetPlayer()->SendSystemMessage("±ãĞ¯Ê½»Ã»¯NPCÒÑ½ûÓÃ¡£");
+            handler->GetPlayer()->SendSystemMessage("éšèº«å¹»åŒ–NPCå·²ç¦ç”¨ã€‚");
             handler->SetSentErrorMessage(true);
             return true;
         }
